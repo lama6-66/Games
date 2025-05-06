@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-<link rel="stylesheet" href="style.css">
-<title>Games</title>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body >
+<body>
 
+    <div id="navbar-placeholder"></div>
 
-
+    <script>
+        fetch('../navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navbar:', error));
+    </script>
+<h1>ggg</h1>
 </body>
-
-
-
-
 
 </html>
