@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>Adventur</title>
+    <link rel="stylesheet" href="a1.css">
+</header>
+
+
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <script>
+      fetch('../navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
+
+
+
+</body>
+
+</html>
